@@ -16,15 +16,6 @@ function Animation() {
             </div>
           </div>
         </p>
-        <a
-          className="Animation-link"
-          href="https://twitter.com/ndrsyanez"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          AndresYF
-        </a>
-        
       </header>
     </div>
   );
