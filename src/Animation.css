@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.Animation {
+  text-align: center;
+}
+
+.Animation-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Animation-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Animation-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Animation-link {
+  color: #61dafb;
+}
+
+@keyframes Animation-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.box{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #61dafb;
+  position: relative;
+}
+
+.box span{
+  position: absolute;
+  top: -100%;
+  left: -340%;
+  width: 800%;
+  height: 80px;
+  border: 4px solid #61dafb;
+  border-radius: 50%;
+  animation: anim 4s infinite;
+}
+
+.box span:nth-child(1){
+  transform: rotate(-60deg);
+  animation: anim2 4s infinite;
+}
+
+.box span:nth-child(2){
+  transform: rotate(60deg);
+  animation: anim3 4s infinite;
+}
+
+
+@keyframes anim{
+  0%,100%{transform: rotate(0deg);}
+  50%{transform: rotate(360deg);}
+}
+
+@keyframes anim2{
+  0%,100%{transform: rotate(-60deg);}
+  50%{transform: rotate(300deg);}
+}
+
+@keyframes anim3{
+  0%,100%{transform: rotate(60deg);}
+  50%{transform: rotate(300deg);}
+}
+
+
+
+
+
+
+
+

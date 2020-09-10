@@ -1,26 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './Animation.css';
 
-function App() {
+function Animation() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="Animation">
+      <header className="Animation-header">
+        <img src={logo} className="Animation-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <div class="main">
+            <div class="box">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="Animation-link"
+          href="https://twitter.com/ndrsyanez"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          AndresYF
         </a>
+        
       </header>
     </div>
   );
 }
 
-export default App;
+export default Animation;
